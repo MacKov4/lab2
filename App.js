@@ -5,15 +5,15 @@ export default function App() {
   const [inputValue, setInputValue] = useState("");
 
   const addItem = () => {
-    if (inputValue.trim() === "") return; // Проверяем, что поле не пустое
+    if (inputValue.trim() === "") return; 
 
     const newItem = {
-      id: Date.now(), // Генерация уникального id
+      id: Date.now(), 
       text: inputValue,
     };
 
-    setItems([...items, newItem]); // Добавляем новый элемент в список
-    setInputValue(""); // Очищаем поле ввода
+    setItems([...items, newItem]); 
+    setInputValue("");
   };
 
   return (
